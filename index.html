@@ -7,7 +7,7 @@
     <link rel="icon" href="./Images/Logo.png">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
     <!-- Header NavBar -->
@@ -19,11 +19,11 @@
 
         <div>
             <ul id="navBar">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="#hero">Home</a></li>
                 <li><a href="#product-section">Products</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact-header">Contact</a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
@@ -33,7 +33,7 @@
     </section>
 
     <!-- Hero Section -->
-    <section id="hero">
+    <section id="hero" class="section">
         <h4>Trade-in-offer</h4>
         <h2>Super Value Deals</h2>
         <h1>On all products</h1>
@@ -42,13 +42,16 @@
     </section>
 
     <!-- Products Section -->
-    <section id="product-section" class="section-p1">
+    <section id="product-section" class="section-p1 section">
         <h2>Featured Products</h2>
         <div class="productContainer">
             <div class="product">
                 <img src="./Images/productImg/Air cooler.png" alt="">
                 <div class="description">
                     <h5>Air Coolers</h5>
+                </div>
+                <div class="pd">
+                    <p>Hello</p>
                 </div>
             </div>
             <div class="product">
@@ -121,7 +124,7 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services">
+    <section id="services" class="section">
         <h2>Our Services</h2>
         <div class="serviceContainer">
             <div class="service">
@@ -156,33 +159,34 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact-header">
-        <h2>Contact Us !</h2>
-    </section>
-    <section id="contact-details" class="section-p1">
-        <div class="details">
-            <span>GET IN TOUCH</span>
-            <h2>Visit one of our Agency locations or contact us today</h2>
-            <h3>Head Office</h3>
-            <div>
-                <li>
-                    <i class="fal fa-map"></i>
-                    <p>Shop No 3, Sham Ki Sabji Mandi, Bhilwara Ho, Bhilwara - 311001 (Collectory Chouraha)</p>
-                </li>
-                <li>
-                    <i class="fal fa-phone-alt"></i>
-                    <p>+91 9462830730</p>
-                </li>
-                <li>
-                    <i class="fal fa-clock"></i>
-                    <p>Monday to Saturday: 9:00am to 9:00pm</p>
-                </li>
+    <section id="contact-header" class="section-p1 section">
+        <h2 id="contact-heading">Contact Us !</h2>
+        <div id="contact-details">
+            <div class="details">
+                <span>GET IN TOUCH</span>
+                <h2>Visit one of our Agency locations or contact us today</h2>
+                <h3>Head Office</h3>
+                <div>
+                    <li>
+                        <i class="fal fa-map"></i>
+                        <p>Shop No 3, Sham Ki Sabji Mandi, Bhilwara Ho, Bhilwara - 311001 (Collectory Chouraha)</p>
+                    </li>
+                    <li>
+                        <i class="fal fa-phone-alt"></i>
+                        <p>+91 9462830730</p>
+                    </li>
+                    <li>
+                        <i class="fal fa-clock"></i>
+                        <p>Monday to Saturday: 9:00am to 9:00pm</p>
+                    </li>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230760.1129209362!2d74.36950222499999!3d25.350302500000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c24ebbf36357%3A0x849cc7f1a76a5f91!2sSharma%20Electric%20And%20Repairing%20Centre!5e0!3m2!1sen!2sin!4v1710724632368!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230760.1129209362!2d74.36950222499999!3d25.350302500000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c24ebbf36357%3A0x849cc7f1a76a5f91!2sSharma%20Electric%20And%20Repairing%20Centre!5e0!3m2!1sen!2sin!4v1710724632368!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
     </section>
-        
+
+    <script src="script.js"></script>
 </body>
 </html>

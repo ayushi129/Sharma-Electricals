@@ -1,0 +1,136 @@
+/* Tablet */
+@media (max-width: 1025px){
+    /* Global Styles */
+    .section-p1 {
+        padding: 40px 40px;
+    }
+    
+    #header{
+        padding: 15px 60px;
+    }
+
+    /* Nav-Bar */
+    #navBar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #3f3f3f;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+    #navBar.active{
+        right: 0;
+    }
+    #navBar li{
+        margin-bottom: 40px;
+    }
+    #navBar li.active::after {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        border-radius: 10%;
+        background-color: #fca311;
+        margin: 0 auto;
+        position: absolute;
+        bottom: -5px;
+        left: 30px;
+}
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: #fff;
+        font-size: 24px;
+        padding-right: 20px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #fff;
+        font-size: 25px;
+    }
+
+    /* services */
+    .services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .service{
+        margin: 10px 40px;
+        width: 100%;
+        padding: 40px;
+    }
+}
+
+/* Phone */
+@media (max-width: 477px){
+    #header{
+        padding: 15px 30px;
+    }
+    #logo h4{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    #hero{
+        padding: 0 20px;
+        background-position: 58%;
+    }
+    #hero::before {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    #mobile i{
+        font-size: 20px;    
+    }
+    h2{
+        font-size: 32px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    .section-p1{
+        padding: 20px;
+    }
+    .service{
+        padding: 10px 20px;
+        margin: 10px 10px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .service-desc{
+        width: 100%;
+        text-align: center;
+    }
+    .service h4 {
+        font-size: 20px;
+        padding: 0;
+    }
+    .service p {
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+    }
+    #contact-details{
+        flex-direction: column;
+    }
+    #contact-details .details{
+        width: 100%;
+    }
+    #contact-details .map{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
